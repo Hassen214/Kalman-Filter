@@ -10,6 +10,8 @@ void Kalmanfilter::predict(const Matrix& u) {
     // Predict error covariance
     P = F * P * F_prime + Q;
 }
+
+
 void Kalmanfilter::update(const Matrix y, double dt, const Matrix A) {
     // Compute residual
 
